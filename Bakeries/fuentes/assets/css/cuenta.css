@@ -1,0 +1,23 @@
+/*CSS cuenta_usuario.php*/
+
+.datos-usuario {
+    background-color: #f2f2f2;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.img-usu {
+    text-align: center;
+}
+
+.img-usu img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+}
+
+.nom-usu {
+    text-align: center;
+}

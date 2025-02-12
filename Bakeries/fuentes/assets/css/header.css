@@ -1,0 +1,123 @@
+/**ARCHIVO CSS CABECERA**/
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+header a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ffa500;
+}
+
+/*nav*/
+.hdr-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+/*menu*/
+.hdr-admin {
+    text-align: center;
+}
+
+#menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu-icon:hover {
+    color: #ffa500;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    right: inherit;
+    padding: 20px;
+}
+
+li {
+    border-radius: 15px;
+    position: relative;
+    margin-right: auto;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: #ffa50080;
+    ;
+}
+
+/*carrito/sesion*/
+.hdr-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.a-sesion p {
+    display: none;
+}
+
+.hdr-carrito p {
+    display: none;
+}
+
+/*Vista móvil*/
+@media only screen and (min-width:480px) {
+
+    #menu {
+        display: none;
+    }
+}
+
+/*Monitor y tablet*/
+@media only screen and (min-width:1024px) {
+
+    #menu-icon {
+        display: none;
+    }
+
+    li {
+        display: inline;
+    }
+
+    .hdr-3 {
+        gap: 0rem;
+    }
+
+    .a-sesion p {
+        display: inline;
+    }
+
+    .hdr-carrito p {
+        display: inline;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        gap: 1rem;
+    }
+}

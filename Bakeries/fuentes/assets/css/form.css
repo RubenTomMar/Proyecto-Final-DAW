@@ -1,0 +1,98 @@
+/*CSS formularios*/
+
+.form {
+    width: 70%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.form-orden {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.form-cuenta-usu {
+    width: 30%;
+}
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=file],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    color: #ffa500;
+    opacity: 0.7;
+}
+
+/*alta.php*/
+.modificar:hover,
+.eliminar:hover {
+    opacity: 0.7;
+}
+
+/*cuenta_usuario.php*/
+#cancelar-modif-usu {
+    background-color: #ff4848;
+}
+
+#cancelar-modif-usu:hover {
+    color: #000;
+    opacity: 0.7;
+}
+
+/*Monitor y tablet*/
+@media only screen and (min-width:1024px) {
+
+    .form-orden {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+}

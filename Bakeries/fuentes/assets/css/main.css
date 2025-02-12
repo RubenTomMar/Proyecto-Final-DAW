@@ -1,0 +1,162 @@
+/*CSS DEL INDEX Y MAIN*/
+
+/*
+ * css general para algunas de las páginas, index.php, cards
+*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: 0px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 40px;
+  font-size: 30px;
+}
+
+button:hover {
+  color: #ffa500;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.productos {
+  margin: 20px;
+}
+
+.titulo {
+  margin: 10px;
+}
+
+.ver-mas {
+  font-size: 20px;
+  color: #ffa500;
+}
+
+.lista-productos {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*CARDS*/
+.card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  margin: 50px;
+  text-align: center;
+  font-family: arial;
+  border-radius: 4px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px #00000033;
+  transform: scale(1.2);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-title {
+  color: #000;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.card-text {
+  color: #808080;
+  font-size: 22px;
+}
+
+.card-btn {
+  border: none;
+  border-radius: 4px;
+  outline: 0;
+  padding: 12px;
+  margin: 8px 0 8px 0;
+  color: #ffffff;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 70%;
+  font-size: 18px;
+}
+
+.card-btn:hover {
+  opacity: 0.7;
+}
+
+.registro {
+  color: #000;
+}
+.registro:hover {
+  color: #ffa500;
+}
+
+.paginas>a {
+  border-radius: 50px;
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/*mensajes php*/
+.ok {
+  color: #008000;
+  background-color: #bcffbc;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.err {
+  color: #ff0000;
+  background-color: #ffbcbc;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*sobre-nosotros.php*/
+.info {
+  margin: 50px;
+  background-color: #f2f2f2;
+  font-size: 20px;
+  width: 30%;
+}
+
+/*terminos y condiciones.php*/
+.terminos {
+  text-align: justify;
+  width: 80%;
+}
+
+/*Monitor y tablet*/
+@media only screen and (min-width:1024px) {
+
+  .card-img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .lista-productos {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,97 @@
+/*
+*Tarjeta que muetra el producto y descrtipcion en una sola pagina
+* mostrar_producto.php
+*/
+
+.producto {
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: .5fr 2fr 1.5fr .5fr .5fr;
+    gap: 10px 10px;
+}
+
+.img_producto {
+    margin: 10px;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    grid-row: 2 / 3;
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.nombre {
+    border-radius: 5px;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    grid-row: 1 / 2;
+}
+
+.descripcion {
+    border-radius: 5px;
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+    grid-row: 3 / 4;
+}
+
+.precio {
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+    grid-row: 4 / 5;
+}
+
+.btn-carrito {
+    border-radius: 5px;
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+    grid-row: 5 / 6;
+}
+
+/*Monitor y tablet*/
+@media only screen and (min-width:1024px) {
+
+    .producto {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    }
+
+    .img_producto {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+    }
+    
+    .nombre {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .descripcion {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+    
+    .precio {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    .btn-carrito {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+}

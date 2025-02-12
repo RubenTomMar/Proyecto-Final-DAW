@@ -1,0 +1,74 @@
+/*CSS para las tablas*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 20%;
+    margin: 20px;
+    border: 1px solid #d3d3d3;
+}
+
+th {
+    color: #ffffff;
+    background-color: #6c737a;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff
+}
+
+.col-categoria {
+    display: none;
+}
+
+.col-procedencia {
+    display: none;
+}
+
+.col-descripcion {
+    display: none;
+}
+
+.modificar {
+    border: none;
+    font-size: medium;
+    background-color: #4848ff;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.eliminar {
+    border: none;
+    font-size: medium;
+    background-color: #ff4848;
+    border-radius: 50px;
+}
+
+.fa-trash {
+    color: #ffffff;
+}
+
+/*Monitor y tablet*/
+@media only screen and (min-width:1024px) {
+
+    table {
+        width: 80%;
+    }
+
+    .col-categoria {
+        display: block;
+    }
+
+    .col-procedencia {
+        display: block;
+    }
+    
+    .col-descripcion {
+        display: block;
+    }
+}
